@@ -36,17 +36,80 @@ footer {
     width: 100%;
 }
 
-
-/* class to hide elements
-.empty {
-    display: none;
+.navbar img {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin: .5rem 1rem .5rem 2rem;
 }
 
 
-/*logotype box*/
+/* navbar styling starts here*/
 
-.img-div {
-    height: 5rem;
+.navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-color: black;
+    background-color: white;
+    border-bottom: rgb(190, 184, 184) solid 0.1px;
+    color: black;
+    width: 100%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem 1rem 2rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: white;
+    border-radius: 8px;
+    background-color: #354F52;
+    transition: all 0.4s ease-out;
+}
+
+
+/* hamburger button*/
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.toggle-button .bar {
+    height: .2rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.625rem;
+}
+
+
+/* end of navbar*/
+
+
+/* class to hide elements*/
+
+.empty {
+    display: none;
 }
 
 
