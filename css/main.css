@@ -125,6 +125,10 @@ h2 {
     margin: 0rem 1rem 0rem 1rem;
 }
 
+.news-header-container h1 {
+    margin-left: 1.8rem;
+}
+
 
 /* img containers*/
 
@@ -161,6 +165,26 @@ h2 {
 .styled-href a:hover {
     font-weight: bolder;
     text-decoration: underline;
+}
+
+
+/* readmore "button" ahref*/
+
+.readmore {
+    float: right;
+}
+
+.readmore a {
+    text-decoration: none;
+    color: black;
+    padding: .4rem .5rem .4rem .5rem;
+    background-color: #95D5B2;
+    border-radius: 5px;
+}
+
+.readmore a:hover {
+    background-color: #00d354;
+    transition: 0.3s ease-out;
 }
 
 
@@ -339,7 +363,7 @@ textarea {
         flex-direction: column;
     }
     .flexbox-item {
-        width: 100%;
+        width: 95%;
         margin-top: 0rem;
     }
     .form {
