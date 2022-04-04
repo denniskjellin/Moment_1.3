@@ -38,12 +38,6 @@ footer {
 h1,
 h2 {
     font-size: 2rem;
-}
-
-
-/* titel styling*/
-
-.color-title {
     color: #297A55;
 }
 
@@ -97,19 +91,19 @@ h2 {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 1.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 2rem;
+    width: 2.3rem;
     height: 1.7rem;
 }
 
 .toggle-button .bar {
-    height: .2rem;
+    height: .24rem;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #297A55;
     border-radius: 0.625rem;
 }
 
@@ -128,7 +122,7 @@ h2 {
 
 .flexbox-item {
     width: 50%;
-    margin: 0rem .5rem 0rem .5rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 
@@ -170,7 +164,49 @@ h2 {
 }
 
 
-/*footer*/
+/* contact form */
+
+.form {
+    margin-top: 4rem;
+    background-color: #1B4332;
+    color: white;
+    padding: 3rem;
+    max-width: 30rem;
+    border-radius: 5px;
+}
+
+.form h1 {
+    color: white;
+}
+
+.form input[type=text],
+[type=email],
+textarea {
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.form input[type=submit] {
+    background-color: #95D5B2;
+    color: rgb(0, 0, 0);
+    padding: 0.7rem 1.2rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form input[type=submit]:hover {
+    background-color: #00d354;
+    transition: 0.3s ease-out;
+}
 
 
 /* footer-content styling*/
@@ -198,11 +234,13 @@ h2 {
 .footer-heading h2 {
     margin-top: 1rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 .footer-email-form h2 {
     margin-top: 1rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 
@@ -302,6 +340,10 @@ h2 {
     }
     .flexbox-item {
         width: 100%;
+        margin-top: 0rem;
+    }
+    .form {
+        margin: 2rem;
     }
 }
 
