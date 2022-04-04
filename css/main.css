@@ -22,7 +22,6 @@ main {
     /* margin/padding to give air to the page and margin to nav/footer elements*/
     margin-bottom: 2rem;
     margin-top: 2rem;
-    padding: .9rem .9rem 4rem .9rem;
     /* line height for page*/
     line-height: 1.6;
     /* letter spacing, to give minimal air between letters*/
@@ -34,6 +33,18 @@ header,
 main,
 footer {
     width: 100%;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+}
+
+
+/* titel styling*/
+
+.color-title {
+    color: #297A55;
 }
 
 .navbar img {
@@ -106,10 +117,56 @@ footer {
 /* end of navbar*/
 
 
+/*containers*/
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: .9rem .9rem 4rem .9rem;
+}
+
+.flexbox-item {
+    width: 50%;
+    margin: 0rem .5rem 0rem .5rem;
+}
+
+
+/* img containers*/
+
+.header-img-container img {
+    width: 100%;
+    margin-bottom: 3rem;
+    box-shadow: .3rem .3rem .5rem rgb(146, 146, 146);
+}
+
+.img-logo-text img {
+    max-height: 8rem;
+    margin-top: 1.5rem;
+}
+
+.img-container img {
+    width: 100%;
+    box-shadow: .3rem .3rem .5rem rgb(146, 146, 146);
+    border-radius: .5rem;
+}
+
+
 /* class to hide elements*/
 
 .empty {
     display: none;
+}
+
+.styled-href a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #297A55;
+}
+
+.styled-href a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 
@@ -119,10 +176,14 @@ footer {
 /* footer-content styling*/
 
 .footer {
+    width: 100%;
     min-height: 20vh;
-    background-color: #1B4332;
     color: white;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #1B4332;
 }
 
 
@@ -136,7 +197,7 @@ footer {
 
 .footer-heading h2 {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .footer-email-form h2 {
@@ -165,7 +226,7 @@ footer {
 /* styling for the text-input field sign up*/
 
 #footer-email {
-    width: 15.625rem;
+    width: 13rem;
     height: 2.5rem;
     border-radius: 0.4rem;
     outline: none;
@@ -186,7 +247,7 @@ footer {
 /* btn for signing up, footer*/
 
 #footer-email-btn {
-    width: 6.25rem;
+    width: 6rem;
     height: 2.5rem;
     border-radius: 0.4rem;
     background-color: #95D5B2;
@@ -194,7 +255,6 @@ footer {
     border: none;
     color: rgb(0, 0, 0);
     font-size: 1rem;
-    font-weight: bold;
 }
 
 
@@ -210,7 +270,7 @@ footer {
 
 /* breaking point, styles below goes to action when screen is 910px or lower*/
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 767px) {
     /* Navbar styling, show toggle button (hamburger nav)*/
     .toggle-button {
         display: flex;
@@ -236,5 +296,17 @@ footer {
     }
     .navbar-links.active {
         display: flex;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    .flexbox-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer {
+        width: 100%;
     }
 }
