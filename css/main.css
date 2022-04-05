@@ -121,11 +121,11 @@ h2 {
 
 .flexbox-item {
     width: 50%;
-    margin: 30px;
+    margin: 20px;
 }
 
 .news-header-container h1 {
-    margin-left: 1.5rem;
+    margin-left: 2.2rem;
 }
 
 
@@ -191,6 +191,7 @@ h2 {
 
 .form {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     background-color: #1B4332;
     color: white;
     padding: 3rem;
@@ -362,16 +363,10 @@ textarea {
         flex-direction: column;
     }
     .flexbox-item {
-        width: 95%;
+        width: 90%;
         margin-top: 0rem;
     }
     .form {
         margin: 2rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .footer {
-        width: 100%;
     }
 }
