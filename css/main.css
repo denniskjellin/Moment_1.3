@@ -56,7 +56,6 @@ h2 {
     align-items: center;
     border-color: black;
     background-color: white;
-    border-bottom: rgb(190, 184, 184) solid 0.1px;
     color: black;
     width: 100%;
 }
@@ -122,11 +121,11 @@ h2 {
 
 .flexbox-item {
     width: 50%;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 30px;
 }
 
 .news-header-container h1 {
-    margin-left: 1.8rem;
+    margin-left: 1.5rem;
 }
 
 
@@ -170,11 +169,8 @@ h2 {
 
 /* readmore "button" ahref*/
 
-.readmore {
+.readmore_backBtn a {
     float: right;
-}
-
-.readmore a {
     text-decoration: none;
     color: black;
     padding: .4rem .5rem .4rem .5rem;
@@ -182,7 +178,10 @@ h2 {
     border-radius: 5px;
 }
 
-.readmore a:hover {
+
+/* styled section*/
+
+.readmore_backBtn a:hover {
     background-color: #00d354;
     transition: 0.3s ease-out;
 }
