@@ -71,6 +71,12 @@ h2 {
     margin-left: 4rem;
 }
 
+.navbar-links .active {
+    color: white;
+    border-radius: 8px;
+    background-color: #1B4332;
+}
+
 .navbar-links li a {
     text-decoration: none;
     color: black;
@@ -176,6 +182,11 @@ h2 {
     padding: .4rem .5rem .4rem .5rem;
     background-color: #95D5B2;
     border-radius: 5px;
+}
+
+span {
+    color: #297A55;
+    font-weight: bold;
 }
 
 
